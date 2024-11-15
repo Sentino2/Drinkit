@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="js/scripts.js" defer></script>
+    <title>DrinkIt Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+
+    <section class="header" id="home">
+
+        <nav>
+            <a href="index.html"><img src="assets/eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#features">FEATURES</a></li>
+                    <li><a href="#how">HOW?</a></li>
+                    <li><a href="#drink-map">THE  DRINK  MAP</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Free water for a better world</h1>
+        <p>With DrinkIT we make water more accesible, easier to find <br> and what's more atractive... For Free! </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div>
+
+    </section>
+
+<!-- --------------- Course ------------------------ -->
+
+
+<section class="course" id="features">
+    <h1>Our 3 Features </h1>
+    <p>Drink it,  Re-fill it, and Re-use it </p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Water fountains</h3>
+            <p>With Drinkit your are going to be able to locate every water fontain that you want in Berlin, with a cool interactive map</p>
+        </div>
+        <div class="course-col">
+            <h3>Refill Stations</h3>
+            <p>With Drinkit you can easily locate bars and restaurants where you can refill your bottle of water completely for free</p>
+        </div>
+        <div class="course-col">
+            <h3>Free Water bottles</h3>
+            <p>By partnering with local Berlin businesses, we’re creating a system where they
+                sponsor our reusable water bottles in exchange for advertising space on them. This way,
+                every bottle becomes 100% Free</p>
+        </div>
+    </div>
+
+
+</section>
+
+<!-------------------ampus--------------------->
+
+<section class="campus" id="how">
+    <h1>Free Water bottles, HOW?</h1>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p> -->
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="assets/eduford_img/1slide.png">
+            <div class="layer">
+                <h3>STEP 1</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="assets/eduford_img/2slide.png">
+            <div class="layer">
+                <h3>STEP 2</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="assets/eduford_img/bottlee.png">
+            <div class="layer">
+                <h3>STEP 3</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ------------------facilities----------------- -->
+
+<section class="facilities" id="drink-map">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Drink Map</title>
+        
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        
+        <style>
+            /* Estilo para el mapa */
+            #map {
+                height: 600px;
+                width: 100%;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Drink Map</h1>
+        <div id="map"></div>
+        
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        
+        <!-- Script principal -->
+        <script src="app.js"></script>
+    </body>
+
+</section>
+
+<!-- -----------------------testimonials------------- -->
+
+<section class="testimonials">
+    <h1>What people think</h1>
+    <p>After doing hundreds of interviews we'all ended up in the same conclusion... We need water more accesible</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="assets/eduford_img/user1.jpg">
+            <div>
+                <p>It's surprising how difficult it is to find clean, free water in the city. I constantly end up buying bottled water, which gets expensive over time. With Drinkit, this is no longer a problem. I can easily find places to refill for free, and it’s a huge relief.
+                </p>
+                <h3>Cristine Berkley</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="assets/eduford_img/user2.jpg">
+            <div>
+                <p>Every time I'm out running errands or meeting friends, I find myself having to buy bottled water just to stay hydrated. Thanks to Drinkit, I can now quickly locate refill stations, making it so much easier and cost-effective to stay hydrated.</p>
+                <h3>David Byer</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<!-- ---------------- Call To Action ------------------ -->
+
+<section class="cta" id="contact">
+    <h1>Get your water bottle for free and refill it in your closest refill station</h1>
+    <a href="" class="hero-btn" >CONTACT US</a>
+</section>
+
+
+<!-- ------------------- footer ------------------- -->
+
+<section class="footer" id="about">
+    <h4>About Us</h4>
+    <p>DrinkIt was founded by a passionate group of young students from CODE University who saw an opportunity to make a positive change in Berlin. <br> Walking the vibrant streets and green parks, we realized that accessible, free water sources were hard to find.  <br>So we came together with a mission: to ensure that everyone in Berlin has access to clean, free water whenever they need it.
+
+       <br> Our goal is simple yet impactful—to make hydration accessible while reducing plastic waste. <br>By combining technology with sustainable practices, we’ve created a platform that maps free water refill points across the city. <br> Thanks to our partnerships with local businesses and the Refill initiative, we’re proud to offer a network of refill locations and even provide reusable water bottles, sponsored by community-minded businesses. <br>
+        
+        We believe that a well-hydrated community is a healthier, happier one, and we’re excited to bring DrinkIt to life. <br> Join us on our journey to create a more sustainable and connected Berlin, one sip at a time.</p>
+    <div class="icons">
+        <!-- Updated class names for Font Awesome 5.x or later -->
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-instagram"></i>
+    </div>
+    <p>made with <i class="fa fa-heart"></i> by Santiago Garcia Sapeta</p>
+</section>
+
+
+
+
+
+
+
+
+<!-- ------------ Javascript for Toggle Menu -------------- -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"; 
+    }
+
+</script>
+    
+</body>
+</html>
